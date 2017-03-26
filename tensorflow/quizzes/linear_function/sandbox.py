@@ -55,7 +55,8 @@ with tf.Session() as session:
     # Cross entropy
     # This quantifies how far off the predictions were.
     # You'll learn more about this in future lessons.
-    cross_entropy = -tf.reduce_sum(labels * tf.log(prediction), reduction_indices=1)
+    cross_entropy = - \
+        tf.reduce_sum(labels * tf.log(prediction), reduction_indices=1)
 
     # Training loss
     # You'll learn more about this in future lessons.
