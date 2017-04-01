@@ -7,8 +7,6 @@ def sigmoid(x):
 
 
 def sigmoid_prime(x):
-    import ipdb; ipdb.set_trace()
-    
     """Derivative of the sigmoid function"""
     return sigmoid(x) * (1 - sigmoid(x))
 
